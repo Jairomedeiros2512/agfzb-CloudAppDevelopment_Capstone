@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+    <body>
+    <!--Add a registration form here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Best Cars</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/djangoapp/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/djangoapp/contact">Contact Us</a>
+                    </li>
+                    {% if user.is_authenticated %}
+                    <li>
+                        <a class="btn btn-link" href="#">{{ user.first_name }}{{ user.username }}</a>
+                        <a class="btn btn-link" href="logout/">Logout</a>
+                    </li>
+                    {% else %}
+                        <li>
+                            <a class="btn btn-link" href="/djangoapp/login/">Sign In</a>
+                            <a class="btn btn-link" href="/djangoapp/signup/">Sign Up</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+        <form action="{% url 'djangoapp:registration' %}" method="post">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <hr>
+                <label for="username"><b>User Name</b></label>
+                <input type="text" placeholder="Enter User Name: " name="username" required>
+                <label for="firstname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name: " name="firstname" required>
+                <label for="lastname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name: " name="lastname" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password: " name="psw" required>
+                <div>
+                    {% csrf_token %}
+                    <button class="button" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
