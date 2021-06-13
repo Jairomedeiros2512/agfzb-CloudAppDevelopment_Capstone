@@ -1,11 +1,11 @@
 applications:
   - name: djangoapp
     routes:
-      - route: project-jms-bestcars.us-south.cf.appdomain.cloud
+      - route: jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
   - name: djangoapp-nginx
     routes:
-      - route: project-jms-bestcars.us-south.cf.appdomain.cloud/static
+      - route: jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
