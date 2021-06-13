@@ -3,7 +3,7 @@ applications:
     routes:
       - route: bestcards-my-project-capstone.us-south.cf.appdomain.cloud
     memory: 128M
-    buildpack: python_buildpack
+    buildpack: python
   - name: djangoapp-nginx
     routes:
       - route: bestcards-my-project-capstone.us-south.cf.appdomain.cloud/static
