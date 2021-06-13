@@ -25,7 +25,7 @@ SECRET_KEY = 'ao5z(o(z@cvzodm99d32jkxa5e8a1!q_4sqss5-a%n6tg$#h$+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["bestcards-Capstone-cards.us-south.cf.appdomain.cloud", "localhost" ]
+ALLOWED_HOSTS = ["bestcards-my-project-capstone.us-south.cf.appdomain.cloud", "localhost" ]
 
 
 # Application definition
