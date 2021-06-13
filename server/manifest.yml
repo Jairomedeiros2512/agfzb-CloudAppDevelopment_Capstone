@@ -8,4 +8,4 @@ applications:
     routes:
       - route: bestcards-my-project-capstone.us-south.cf.appdomain.cloud/static
     memory: 128M
-    buildpack: staticfile_buildpack
+    buildpack: staticfile
