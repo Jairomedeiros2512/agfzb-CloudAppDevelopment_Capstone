@@ -6,7 +6,7 @@ on: workflow_dispatch
 env:
   IBM_CLOUD_REGION: us-south
   IBM_CLOUD_GROUP: Default
-  IBM_CLOUD_SPACE: dev
+  IBM_CLOUD_SPACE: djangoserver-space
   IBM_CLOUD_ORG: learningjairo01@gmail.com
   MANIFEST_NAME: manifest.yml
   IBM_CLOUD_API: ${{secrets.IBM_CLOUD_API_KEY}}
