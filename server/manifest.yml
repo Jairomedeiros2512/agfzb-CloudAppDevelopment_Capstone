@@ -3,9 +3,9 @@ applications:
     routes:
       - route: jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud
     memory: 128M
-    buildpacks: python_buildpack
+    buildpack: python_buildpack
   - name: djangoapp-nginx
     routes:
       - route: jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud/static
     memory: 128M
-    buildpacks: staticfile_buildpack
+    buildpack: staticfile_buildpack
