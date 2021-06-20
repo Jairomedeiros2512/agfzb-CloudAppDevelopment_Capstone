@@ -12,54 +12,43 @@
     <script src="https://unpkg.com/bootstrap-table@1.18.2/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
 
 </head>
-    <td><a href="{% url 'djangoapp:dealer_details' dealer.id %}">{{dealer.full_name}}</a></td>
-    <body>
-    <!--Add a nav bar here -->
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Project: Develop Cloud Best Cars Concessionaria.</a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    {% if user.is_authenticated %}
-                    <li>
-                        <a class="btn btn-link" href="#">{{ user.first_name }}({{ user.username }})</a>
-                        <a class="btn btn-link" href="{% url 'admin:logout' %}">Logout</a>
-                    </li>
-                    {% else %}
-                    <li>
-                            {% csrf_token %}
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Username" name="username" >
-                                <input type="password" class="form-control" placeholder="Password" name="psw" >
-                                <button class="btn btn-primary" type="submit">Login</button>
-                            </div>
-                        </form>
-                    </li>
-                    {% endif %}
-                </ul>
-            </div>
-        </nav>
 
-    <!--Add a dealer table here -->
- <table class="table" id="table">
+    <body>
+        {% include 'Navbar.html' %}
+    <!--Add a nav bar here -->
+    <div class="container">
+     <table class="table table-striped" id="table" data-filter-control="true" style="margin-top: 3%; margin-bottom: 3%;">
         <thead>
-            <tr>
-                <th data-field="id">ID</th>
-                ...
-            </tr>
-        </thead>
-        <tbody>
-            {% for dealer in dealership_list %}
                 <tr>
-                    <td>{{dealer.id}}</td>
-                    ...
+                    <th scope="col">ID</th>
+                    <th scope="col">Dealer Name</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Zip</th>
+                    <th data-field="state" data-filter-control="select">State</th>
+                </tr>
+            </thead>
+        <tbody>
+            {% for dealer in dealerships%}
+                <tr>
+                    <td style="padding: 2%;">{{dealer.id}}</td>
+                    <td style="padding: 2%;"><a href="{% url 'djangoapp:dealer_details' dealer.id %}">{{dealer.full_name}}</a></td>
+                    <td style="padding: 2%;">{{dealer.city}}</td>
+                    <td style="padding: 2%;">{{dealer.address}}</td>
+                    <td style="padding: 2%;">{{dealer.zip}}</td>
+                    <td style="padding: 2%;">{{dealer.st}}</td>
                 </tr>
             {% endfor %}
         </tbody>
     </table>
-
+    <!--Add a dealer table here -->
+    </div>
 
     </body>
+    <script>
+        $(function() {
+            $('#table').bootstrapTable()
+        })
+    </script>
 
 </html>
