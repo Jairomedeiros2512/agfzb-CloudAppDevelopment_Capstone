@@ -1,4 +1,15 @@
-IBM FULL STACK CLOUD DEVELOPER
+#Projeto de Aprendizagem Aplicada IBM FULL STACK CLOUD DEVELOPER
+
+Ao longo dos 10 cursos do Certificado Profissional, você desenvolverá um portfólio de projetos práticos envolvendo várias tecnologias populares e linguagens de programação em Full Stack Cloud Application Development.
+
+Isso inclui a publicação de páginas HTML no Cloud Object Storage; criar uma calculadora de taxa de juros usando HTML, CSS e JavaScript, um programa de IA implantado no Cloud Foundry usando princípios DevOps e conjuntos de ferramentas CI / CD com um banco de dados NoSQL, um aplicativo Node.js e React, um aplicativo de livro de visitas em contêiner empacotado com Docker Kubernetes e gerenciado com OpenShift, um aplicativo Python empacotado como um pacote, um aplicativo RDBMS usando Django ORM e Bootstrap, e um aplicativo construído usando Microservices & Serverless; e concluir um projeto Capstone que aproveita várias tecnologias em um único aplicativo Cloud Native Full Stack escalável.
+
+Link do Meu Projeto
+# Links do Projeto finalizado
+https://jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud/admin/login/?next=/admin/
+https://jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud/djangoapp/
+
+
 # Modelo de Projeto Final
 
 O projeto final deste curso possui várias etapas que você deve concluir.
