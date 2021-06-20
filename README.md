@@ -1,4 +1,4 @@
-#Projeto de Aprendizagem Aplicada IBM FULL STACK CLOUD DEVELOPER
+# Projeto de Aprendizagem Aplicada IBM FULL STACK CLOUD DEVELOPER
 
 Ao longo dos 10 cursos do Certificado Profissional, você desenvolverá um portfólio de projetos práticos envolvendo várias tecnologias populares e linguagens de programação em Full Stack Cloud Application Development.
 
@@ -6,7 +6,7 @@ Isso inclui a publicação de páginas HTML no Cloud Object Storage; criar uma c
 
 Link do Meu Projeto
 # Links do Projeto finalizado
-https://jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud/admin/login/?next=/admin/
+https://jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud/admin/login/?next=/admin/ .
 https://jms-ibmcloud-bestcarsfull.us-south.cf.appdomain.cloud/djangoapp/
 
 
