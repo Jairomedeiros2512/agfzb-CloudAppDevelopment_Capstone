@@ -1,4 +1,4 @@
-# Projeto de Aprendizagem Aplicada 
+# Programa de Cursos Integrados.
 # IBM FULL STACK CLOUD DEVELOPER
 
 Ao longo dos 10 cursos do Certificado Profissional, você desenvolverá um portfólio de projetos práticos envolvendo várias tecnologias populares e linguagens de programação em Full Stack Cloud Application Development.
